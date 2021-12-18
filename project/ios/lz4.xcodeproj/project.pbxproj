@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FC200C3273E2D8C00FC3084 /* lz4Import.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6FC200BE273E2D8C00FC3084 /* lz4Import.cpp */; };
+		6FC200C4273E2D8C00FC3084 /* lz4.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FC200BF273E2D8C00FC3084 /* lz4.c */; };
+		6FC200C5273E2D8C00FC3084 /* lz4hc.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FC200C0273E2D8C00FC3084 /* lz4hc.c */; };
+		6FC200C6273E2D8C00FC3084 /* xxhash.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FC200C1273E2D8C00FC3084 /* xxhash.c */; };
+		6FC200C7273E2D8C00FC3084 /* lz4frame.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FC200C2273E2D8C00FC3084 /* lz4frame.c */; };
+		6FC785BE273E5D73000CDCF2 /* pike.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FC785BD273E5D73000CDCF2 /* pike.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6FC200B0273E2D3300FC3084 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6FC200B2273E2D3300FC3084 /* liblz4.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblz4.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC200BE273E2D8C00FC3084 /* lz4Import.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lz4Import.cpp; path = ../../../source/lz4Import.cpp; sourceTree = "<group>"; };
+		6FC200BF273E2D8C00FC3084 /* lz4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lz4.c; path = ../../../source/lz4.c; sourceTree = "<group>"; };
+		6FC200C0273E2D8C00FC3084 /* lz4hc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lz4hc.c; path = ../../../source/lz4hc.c; sourceTree = "<group>"; };
+		6FC200C1273E2D8C00FC3084 /* xxhash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = xxhash.c; path = ../../../source/xxhash.c; sourceTree = "<group>"; };
+		6FC200C2273E2D8C00FC3084 /* lz4frame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lz4frame.c; path = ../../../source/lz4frame.c; sourceTree = "<group>"; };
+		6FC785BD273E5D73000CDCF2 /* pike.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pike.c; path = ../../../source/pike.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FC200AF273E2D3300FC3084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FC200A9273E2D3300FC3084 = {
+			isa = PBXGroup;
+			children = (
+				6FC785BD273E5D73000CDCF2 /* pike.c */,
+				6FC200BF273E2D8C00FC3084 /* lz4.c */,
+				6FC200C2273E2D8C00FC3084 /* lz4frame.c */,
+				6FC200C0273E2D8C00FC3084 /* lz4hc.c */,
+				6FC200BE273E2D8C00FC3084 /* lz4Import.cpp */,
+				6FC200C1273E2D8C00FC3084 /* xxhash.c */,
+				6FC200B3273E2D3300FC3084 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6FC200B3273E2D3300FC3084 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FC200B2273E2D3300FC3084 /* liblz4.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FC200B1273E2D3300FC3084 /* lz4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FC200BB273E2D3300FC3084 /* Build configuration list for PBXNativeTarget "lz4" */;
+			buildPhases = (
+				6FC200AE273E2D3300FC3084 /* Sources */,
+				6FC200AF273E2D3300FC3084 /* Frameworks */,
+				6FC200B0273E2D3300FC3084 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lz4;
+			productName = lz4;
+			productReference = 6FC200B2273E2D3300FC3084 /* liblz4.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FC200AA273E2D3300FC3084 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					6FC200B1273E2D3300FC3084 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 6FC200AD273E2D3300FC3084 /* Build configuration list for PBXProject "lz4" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6FC200A9273E2D3300FC3084;
+			productRefGroup = 6FC200B3273E2D3300FC3084 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FC200B1273E2D3300FC3084 /* lz4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FC200AE273E2D3300FC3084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC200C5273E2D8C00FC3084 /* lz4hc.c in Sources */,
+				6FC200C7273E2D8C00FC3084 /* lz4frame.c in Sources */,
+				6FC785BE273E5D73000CDCF2 /* pike.c in Sources */,
+				6FC200C6273E2D8C00FC3084 /* xxhash.c in Sources */,
+				6FC200C4273E2D8C00FC3084 /* lz4.c in Sources */,
+				6FC200C3273E2D8C00FC3084 /* lz4Import.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6FC200B9273E2D3300FC3084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6FC200BA273E2D3300FC3084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FC200BC273E2D3300FC3084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FC200BD273E2D3300FC3084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FC200AD273E2D3300FC3084 /* Build configuration list for PBXProject "lz4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FC200B9273E2D3300FC3084 /* Debug */,
+				6FC200BA273E2D3300FC3084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FC200BB273E2D3300FC3084 /* Build configuration list for PBXNativeTarget "lz4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FC200BC273E2D3300FC3084 /* Debug */,
+				6FC200BD273E2D3300FC3084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FC200AA273E2D3300FC3084 /* Project object */;
+}

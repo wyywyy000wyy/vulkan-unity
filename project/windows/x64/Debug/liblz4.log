@@ -1,0 +1,20 @@
+﻿  lz4.c
+  lz4frame.c
+  lz4hc.c
+  pike.c
+  xxhash.c
+  正在生成代码...
+  lz4Import.cpp
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\lz4Import.cpp(64,85): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\lz4Import.cpp(57,22): warning C4101: “info”: 未引用的局部变量
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\lz4Import.cpp(78,91): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\lz4Import.cpp(72,22): warning C4101: “info”: 未引用的局部变量
+  ShaderCompile.cpp
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\IUnityShaderCompilerAccess.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\IUnityGraphics.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\IUnityInterface.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+    正在创建库 D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\Debug\liblz4.lib 和对象 D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\Debug\liblz4.exp
+ShaderCompile.obj : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+ShaderCompile.obj : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\Debug\liblz4.dll : fatal error LNK1120: 2 个无法解析的外部命令

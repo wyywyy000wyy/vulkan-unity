@@ -1,0 +1,23 @@
+LOCAL_PATH := $(call my-dir)
+SRC_DIR := ../../../source
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := liblz4
+LOCAL_C_INCLUDES += $(SRC_DIR)
+LOCAL_LDLIBS := -llog
+LOCAL_ARM_MODE := arm
+
+LOCAL_SRC_FILES += $(SRC_DIR)/lz4.c
+LOCAL_SRC_FILES += $(SRC_DIR)/lz4frame.c
+LOCAL_SRC_FILES += $(SRC_DIR)/lz4hc.c
+LOCAL_SRC_FILES += $(SRC_DIR)/xxhash.c
+LOCAL_SRC_FILES += $(SRC_DIR)/pike.c
+LOCAL_SRC_FILES += $(SRC_DIR)/lz4Import.cpp
+
+
+
+LOCAL_C_INCLUDES += $(SRC_DIR)
+# LOCAL_CPPFLAGS += -DSUPPORT_VULKAN=1
+
+# build
+include $(BUILD_SHARED_LIBRARY)

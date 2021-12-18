@@ -1,0 +1,2 @@
+copy D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\Debug\liblz4.dll D:\Project\work\client\tis_client\client\slg_client\Assets\Plugins\x86_64\liblz4.dll
+copy D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\Debug\liblz4.pdb D:\Project\work\client\tis_client\client\slg_client\Assets\Plugins\x86_64\liblz4.pdb

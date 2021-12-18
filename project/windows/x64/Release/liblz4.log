@@ -1,0 +1,9 @@
+﻿  RenderAPI_Vulkan.cpp
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\NativeRendering\Vulkan\RenderAPI_Vulkan.cpp(1038): warning C4715: “RenderAPI_Vulkan::CopyBufferData”: 不是所有的控件路径都返回值
+    正在创建库 D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\Release\liblz4.lib 和对象 D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\Release\liblz4.exp
+  LINK : 已指定 /LTCG，但不需要生成代码；从链接命令行中移除 /LTCG 以提高链接器性能
+  liblz4.vcxproj -> D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\Release\liblz4.dll
+  已复制         1 个文件。
+  已复制         1 个文件。
+  已复制         1 个文件。
+  已复制         1 个文件。

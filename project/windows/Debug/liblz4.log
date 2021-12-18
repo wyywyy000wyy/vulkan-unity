@@ -1,0 +1,5 @@
+﻿  lz4Import.cpp
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\lz4Import.cpp(57,22): warning C4101: “info”: 未引用的局部变量
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\lz4Import.cpp(72,22): warning C4101: “info”: 未引用的局部变量
+    正在创建库 D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\Debug\liblz4.lib 和对象 D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\Debug\liblz4.exp
+  liblz4.vcxproj -> D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\Debug\liblz4.dll
