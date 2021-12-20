@@ -32,7 +32,6 @@ public:
 	// and draw the triangles with a given world matrix. The triangle data is
 	// float3 (position) and byte4 (color) per vertex.
 	virtual void DrawSimpleTriangles(const float worldMatrix[16], int triangleCount, const void* verticesFloat3Byte4) = 0;
-	virtual void* CopyBufferData(void* bufferHandle, size_t* outBufferSize, void* target) = 0;
 
 	virtual void DrawMesh(NativeMesh* mesh, const float* worldMatrix) = 0;
 	// Begin modifying texture data. You need to pass texture width/height too, since some graphics APIs

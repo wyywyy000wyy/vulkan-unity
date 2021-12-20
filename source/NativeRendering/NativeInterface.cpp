@@ -75,21 +75,15 @@ extern "C" int UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API SetNativeMeshFromUnity
 	NativeMesh* mesh = new NativeMesh{
 	};
 
-	size_t bufferSize;
-	void* bufferDataPtr = s_CurrentAPI->BeginModifyVertexBuffer(vertexBufferHandle, &bufferSize);
-	if(!bufferDataPtr)
-		return -1;
-	mesh->vertexBuffer = new float[vertexCount * sizeof(float) * 3];
-	memcpy(mesh->vertexBuffer, bufferDataPtr, vertexCount * sizeof(float) * 3);
+	int vlen = vertexCount * sizeof(float) * 4;
+
+	mesh->vertexBuffer = new char[vlen];
+	memcpy(mesh->vertexBuffer, vertexBufferHandle, vlen);
 	mesh->vertexCount = vertexCount;
-	s_CurrentAPI->EndModifyVertexBuffer(vertexBufferHandle);
 
-	void* indexbufferDataPtr = s_CurrentAPI->BeginModifyVertexBuffer(indexBufferHandle, &bufferSize);
-
-	mesh->indexBuffer = new int[indexCount * sizeof(int)];
-	memcpy(mesh->indexBuffer, indexbufferDataPtr, indexCount * sizeof(int));
-	s_CurrentAPI->EndModifyVertexBuffer(indexBufferHandle);
-
+	int ilen = indexCount * sizeof(int16_t);
+	mesh->indexBuffer = new char[ilen];
+	memcpy(mesh->indexBuffer, indexBufferHandle, ilen);
 	mesh->indexCount = indexCount;
 	NM->meshs.push_back(mesh);
 	return NM->meshs.size()-1;
@@ -217,7 +211,7 @@ static void DrawMeshs()
 {
 	if (NM->meshs.empty())
 		return;
-	float phi = g_Time; // time set externally from Unity script
+	float phi = 0;// g_Time; // time set externally from Unity script
 	float cosPhi = cosf(phi);
 	float sinPhi = sinf(phi);
 	float depth = 0.7f;
@@ -348,6 +342,10 @@ static void ModifyVertexBuffer()
 	s_CurrentAPI->EndModifyVertexBuffer(bufferHandle);
 }
 
+extern "C" void UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API DrawNativeMeshs()
+{
+	DrawMeshs();
+}
 
 static void UNITY_INTERFACE_API OnRenderEvent(int eventID)
 {
