@@ -75,7 +75,7 @@ extern "C" int UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API SetNativeMeshFromUnity
 	NativeMesh* mesh = new NativeMesh{
 	};
 
-	int vlen = vertexCount * sizeof(float) * 4;
+	int vlen = vertexCount * sizeof(float) * 3;
 
 	mesh->vertexBuffer = new char[vlen];
 	memcpy(mesh->vertexBuffer, vertexBufferHandle, vlen);

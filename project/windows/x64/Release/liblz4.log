@@ -1,5 +1,26 @@
-﻿  RenderAPI_Vulkan.cpp
-D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\NativeRendering\Vulkan\RenderAPI_Vulkan.cpp(1038): warning C4715: “RenderAPI_Vulkan::CopyBufferData”: 不是所有的控件路径都返回值
+﻿  lz4.c
+  lz4frame.c
+  lz4hc.c
+  pike.c
+  xxhash.c
+  正在生成代码...
+  lz4Import.cpp
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\lz4Import.cpp(64,85): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\lz4Import.cpp(57,22): warning C4101: “info”: 未引用的局部变量
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\lz4Import.cpp(78,91): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\lz4Import.cpp(72,22): warning C4101: “info”: 未引用的局部变量
+  NativeInterface.cpp
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\NativeRendering\NativeInterface.cpp(70,29): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\NativeRendering\NativeInterface.cpp(89,27): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  NativeManager.cpp
+  RenderAPI.cpp
+  NativeRenderVulkan.cpp
+  RenderAPI_Vulkan.cpp
+  VulkanMaterial.cpp
+  VulkanRenderer.cpp
+  ShaderCompile.cpp
+D:\Project\work\client\tis_client\client\third_path\unity_lz4\source\NativeRendering\Unity\IUnityShaderCompilerAccess.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
     正在创建库 D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\Release\liblz4.lib 和对象 D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\Release\liblz4.exp
   LINK : 已指定 /LTCG，但不需要生成代码；从链接命令行中移除 /LTCG 以提高链接器性能
   liblz4.vcxproj -> D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\Release\liblz4.dll

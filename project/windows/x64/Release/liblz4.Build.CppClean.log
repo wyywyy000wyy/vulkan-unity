@@ -6,10 +6,13 @@ d:\project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x6
 d:\project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\release\lz4.obj
 d:\project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\release\shadercompile.obj
 d:\project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\release\renderapi_vulkan.obj
+d:\project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\release\nativerendervulkan.obj
 d:\project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\release\renderapi.obj
 d:\project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\release\nativemanager.obj
 d:\project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\release\nativeinterface.obj
 d:\project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\release\lz4import.obj
+d:\project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\release\vulkanmaterial.obj
+d:\project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\release\vulkanrenderer.obj
 d:\project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\release\liblz4.lib
 d:\project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\release\liblz4.exp
 d:\project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\release\liblz4.dll

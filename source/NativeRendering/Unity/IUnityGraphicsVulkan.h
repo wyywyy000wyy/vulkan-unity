@@ -1,5 +1,6 @@
 #pragma once
 #include "IUnityInterface.h"
+#include "IUnityGraphics.h"
 
 #ifndef UNITY_VULKAN_HEADER
 #define UNITY_VULKAN_HEADER <vulkan/vulkan.h>

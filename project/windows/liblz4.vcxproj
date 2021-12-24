@@ -26,7 +26,10 @@
     <ClCompile Include="..\..\source\NativeRendering\NativeInterface.cpp" />
     <ClCompile Include="..\..\source\NativeRendering\NativeManager.cpp" />
     <ClCompile Include="..\..\source\NativeRendering\RenderAPI.cpp" />
+    <ClCompile Include="..\..\source\NativeRendering\Vulkan\NativeRenderVulkan.cpp" />
     <ClCompile Include="..\..\source\NativeRendering\Vulkan\RenderAPI_Vulkan.cpp" />
+    <ClCompile Include="..\..\source\NativeRendering\Vulkan\VulkanMaterial.cpp" />
+    <ClCompile Include="..\..\source\NativeRendering\Vulkan\VulkanRenderer.cpp" />
     <ClCompile Include="..\..\source\pike.c" />
     <ClCompile Include="..\..\source\ShaderCompile.cpp" />
     <ClCompile Include="..\..\source\xxhash.c" />
@@ -42,6 +45,10 @@
     <ClInclude Include="..\..\source\NativeRendering\Unity\IUnityGraphicsMetal.h" />
     <ClInclude Include="..\..\source\NativeRendering\Unity\IUnityGraphicsVulkan.h" />
     <ClInclude Include="..\..\source\NativeRendering\Unity\IUnityInterface.h" />
+    <ClInclude Include="..\..\source\NativeRendering\Vulkan\NativeRenderVulkan.h" />
+    <ClInclude Include="..\..\source\NativeRendering\Vulkan\VulkanMaterial.h" />
+    <ClInclude Include="..\..\source\NativeRendering\Vulkan\VulkanMesh.h" />
+    <ClInclude Include="..\..\source\NativeRendering\Vulkan\VulkanRenderer.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -147,14 +154,14 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;LIBLZ4_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <Optimization>Disabled</Optimization>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>C:\VulkanSDK\1.2.189.2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.2.189.2\Include;D:\Project\Vulkan\VulkanTutorial\code\..\dep\GLFW\include;C:\Program Files (x86)\glm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -163,6 +170,7 @@
       <EnableUAC>false</EnableUAC>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <AdditionalDependencies />
+      <AdditionalLibraryDirectories>D:/Project/Vulkan/VulkanTutorial/code/../dep/GLFW/lib;D:/Project/Vulkan/VulkanTutorial/code/../dep/GLFW/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>copy D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\Release\liblz4.dll D:\Project\work\client\tis_client\client\slg_client\Assets\Plugins\x86_64
@@ -177,13 +185,13 @@ copy D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windo
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;LIBLZ4_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <Optimization>Disabled</Optimization>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>C:\VulkanSDK\1.2.189.2\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.2.189.2\Include;D:\Project\Vulkan\VulkanTutorial\code\..\dep\GLFW\include;C:\Program Files (x86)\glm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -194,6 +202,7 @@ copy D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windo
       <EnableUAC>false</EnableUAC>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <AdditionalDependencies />
+      <AdditionalLibraryDirectories>D:/Project/Vulkan/VulkanTutorial/code/../dep/GLFW/lib;D:/Project/Vulkan/VulkanTutorial/code/../dep/GLFW/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>copy D:\Project\work\client\tis_client\client\third_path\unity_lz4\project\windows\x64\Release\liblz4.dll D:\Project\work\client\tis_client\client\slg_client\Assets\Plugins\x86_64

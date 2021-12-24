@@ -48,6 +48,15 @@
     <ClCompile Include="..\..\source\NativeRendering\RenderAPI.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\source\NativeRendering\Vulkan\NativeRenderVulkan.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\NativeRendering\Vulkan\VulkanRenderer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\NativeRendering\Vulkan\VulkanMaterial.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\source\NativeRendering\NativeManager.h">
@@ -78,6 +87,18 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\..\source\NativeRendering\NativeMesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\NativeRendering\Vulkan\NativeRenderVulkan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\NativeRendering\Vulkan\VulkanMesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\NativeRendering\Vulkan\VulkanRenderer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\NativeRendering\Vulkan\VulkanMaterial.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
